@@ -14,6 +14,10 @@ function Recommend() {
   // JSX 의 요소를 React 에서 참조
   const swiperRef = useRef();
 
+  fetch("https://port-0-interpark-cloud-server-12fhqa2blnp9i5uw.sel5.cloudtype.app/shoppingdata")
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
+
   return (
     <section class="recommend">
       <div class="recommend-inner">
